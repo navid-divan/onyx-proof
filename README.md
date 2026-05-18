@@ -1,10 +1,10 @@
 # Onyx Privacy Machine-Checked Proof
 
-This repository contains an [EasyCrypt](https://www.easycrypt.info/) machine-checked proof that **Onyx** satisfies **Persistent Coercion Resistance (PCR)**, the privacy notion introduced in the submitted associated paperz. The proof formalises Persistent Coercion Resistance implies classical Coercion Resistance (`PCR ⇒ CR`), and `Onyx satisfies PCR` via a six-step hybrid argument H0 → H1 → H2 → H3 → H4 → H5, each transition reducing to a primitive security assumption (dFHE deniability / IND-CPA, NIZK randomness-deniability / ZK, UT simulation-security, MixNet shuffle ZK, MixNet distributed-decryption simulation, and quantum collision-resistance of the hash).
+This repository contains an [EasyCrypt](https://www.easycrypt.info/) machine-checked proof that **Onyx** satisfies **Persistent Coercion Resistance (PCR)**, the privacy notion introduced in the submitted associated paper. The proof formalises Persistent Coercion Resistance implies classical Coercion Resistance (`PCR ⇒ CR`), and `Onyx satisfies PCR` via a six-step hybrid argument H0 → H1 → H2 → H3 → H4 → H5, each transition reducing to a primitive security assumption (dFHE deniability / IND-CPA, NIZK randomness-deniability / ZK, UT simulation-security, MixNet shuffle ZK, MixNet distributed-decryption simulation, and quantum collision-resistance of the hash).
 
 ## Running and verifying
 
-The project is verified by the shell script, from any directory:
+Our proof can be verified by the shell script, from any directory:
 
 ```sh
 bash run.sh

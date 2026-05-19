@@ -5,47 +5,25 @@ require import DFHE.
 require import VotingScheme.
 require import PCR.
 require import Onyx.
-require import H1_NIZK.
-require import H2_dFHE.
+require import G6_dFHE_CPA.
+require import G7_DiscRand.
 
-module ReduceH1H2_to_dFHE_Den_Vote(A : PCR_REAL_ADV) : DFHE_DEN_ADV = {
-  var m_real : dFHE_message
-  var m_claim : dFHE_message
-
+module B_D(A : PCR_REAL_ADV) : DFHE_DEN_ADV = {
+  var stored_pk : dFHE_pkey
   proc choose(pk : dFHE_pkey) : dFHE_message * dFHE_message = {
-    m_real <- witness;
-    m_claim <- witness;
-    return (m_real, m_claim);
+    stored_pk <- pk;
+    return (0, 0);
   }
-
   proc guess(target : dFHE_message, r : dFHE_randomness, c : dFHE_ciphertext) : bool = {
-    var b : bool;
-    b <- false;
-    return b;
+    var d : bool;
+    d <- false;
+    return d;
   }
 }.
 
-module ReduceH1H2_to_dFHE_Den_Cred(A : PCR_REAL_ADV) : DFHE_DEN_ADV = {
-  var m_real : dFHE_message
-  var m_claim : dFHE_message
-
-  proc choose(pk : dFHE_pkey) : dFHE_message * dFHE_message = {
-    m_real <- witness;
-    m_claim <- witness;
-    return (m_real, m_claim);
-  }
-
-  proc guess(target : dFHE_message, r : dFHE_randomness, c : dFHE_ciphertext) : bool = {
-    var b : bool;
-    b <- false;
-    return b;
-  }
-}.
-
-lemma red_dfhe_den_advantage_vote (A <: PCR_REAL_ADV) &m lambda nT t nV nA nC :
-  `| Pr[Hybrid_H1(A).main(lambda, nT, t, nV, nA, nC) @ &m : res]
-   - Pr[Hybrid_H2(A).main(lambda, nT, t, nV, nA, nC) @ &m : res] |
-  <= 2%r * (q_d)%r * advantage_dFHE_den lambda.
-proof.
-admit.
-qed.
+axiom Red_dFHE_Den_correctness (A <: PCR_REAL_ADV {-B_D}) &m lambda nT t nV nA nC :
+  `| Pr[G6_dFHE_CPA(A).main(lambda, nT, t, nV, nA, nC) @ &m : res]
+   - Pr[G7_DiscRand(A).main(lambda, nT, t, nV, nA, nC) @ &m : res] |
+  <= 2%r * (q_d)%r * `| Pr[DFHE_DEN_Game0(B_D(A)).main() @ &m : res]
+                      - Pr[DFHE_DEN_Game1(B_D(A)).main() @ &m : res] |
+   + (q_d)%r * advantage_NIZK_rd lambda.

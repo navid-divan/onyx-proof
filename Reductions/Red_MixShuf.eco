@@ -1,13 +1,8 @@
 {
   "version": 3,
   "echash": "r2025.03",
-  "root": { "kind": "ec", "digest": "731bfaf0b3277862c80d8ac54683cb5c" },
+  "root": { "kind": "ec", "digest": "1f356cd99006532229a92f55a3f52291" },
   "depends": {
-    "AdvantageCalc": {
-      "direct": true,
-      "kind": "ec",
-      "digest": "cb1ffa8fd891cfc9c15a12a50a6db4d4"
-    },
     "AlgTactic": {
       "direct": false,
       "kind": "ec",
@@ -64,7 +59,7 @@
       "digest": "8166dd12ad0e616b3a8ba7a7485be226"
     },
     "DFHE": {
-      "direct": true,
+      "direct": false,
       "kind": "ec",
       "digest": "a16ed9ac079be14fdf39e0523a3b4c45"
     },
@@ -108,38 +103,8 @@
       "kind": "ec",
       "digest": "48ff7f0df0b21341fa4df1e7a84fd90c"
     },
-    "G3_MixDDec": {
-      "direct": true,
-      "kind": "ec",
-      "digest": "da9c2160fed3092f74fb6ebd4ef1eef0"
-    },
-    "G4_Hash": {
-      "direct": true,
-      "kind": "ec",
-      "digest": "a61ea14607a8480f6b2044fb04c35c22"
-    },
-    "G5_NIZK_ZK": {
-      "direct": true,
-      "kind": "ec",
-      "digest": "7bba2f52dac10936f3c22dbcff885636"
-    },
-    "G6_dFHE_CPA": {
-      "direct": true,
-      "kind": "ec",
-      "digest": "75b24be39a2553529268939833ed2597"
-    },
-    "G7_DiscRand": {
-      "direct": true,
-      "kind": "ec",
-      "digest": "c10bec865be0b1630cc0324e1d2deea8"
-    },
-    "G8_Ideal": {
-      "direct": true,
-      "kind": "ec",
-      "digest": "53e7d17cb7eb9dddab6840fcf5a03339"
-    },
     "Hash": {
-      "direct": true,
+      "direct": false,
       "kind": "ec",
       "digest": "e0c846dfe2db6bc7db26c6e1adf415c4"
     },
@@ -179,7 +144,7 @@
       "digest": "b94b5fd99cc42a3a5fb358ab9c0f0d32"
     },
     "NIZK": {
-      "direct": true,
+      "direct": false,
       "kind": "ec",
       "digest": "533317585291e5d87569a6dccbb6ac58"
     },
@@ -203,18 +168,13 @@
       "kind": "ec",
       "digest": "59947d6783c9bb84b7f415608a9a0ab0"
     },
-    "PCRTheorem": {
-      "direct": true,
-      "kind": "ec",
-      "digest": "fc10d777942aa1e0aaa6f159fa96700b"
-    },
     "Pervasive": {
       "direct": true,
       "kind": "ec",
       "digest": "0f385a91ae1a1269de2ba2b7fad360d0"
     },
     "Policy": {
-      "direct": true,
+      "direct": false,
       "kind": "ec",
       "digest": "0cdbb101cabfbcb6ec756cc9e1a9ab9b"
     },
@@ -289,12 +249,12 @@
       "digest": "86b1b5cd82f32d0405a70279cdc8b67b"
     },
     "UT": {
-      "direct": true,
+      "direct": false,
       "kind": "ec",
       "digest": "83b22e60e686b1602c3ca80fbc77656d"
     },
     "VSS": {
-      "direct": true,
+      "direct": false,
       "kind": "ec",
       "digest": "43d17c134bcc4823e4fc87115fd798d4"
     },

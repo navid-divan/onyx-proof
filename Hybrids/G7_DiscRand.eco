@@ -1,13 +1,8 @@
 {
   "version": 3,
   "echash": "r2025.03",
-  "root": { "kind": "ec", "digest": "731bfaf0b3277862c80d8ac54683cb5c" },
+  "root": { "kind": "ec", "digest": "c10bec865be0b1630cc0324e1d2deea8" },
   "depends": {
-    "AdvantageCalc": {
-      "direct": true,
-      "kind": "ec",
-      "digest": "cb1ffa8fd891cfc9c15a12a50a6db4d4"
-    },
     "AlgTactic": {
       "direct": false,
       "kind": "ec",
@@ -59,7 +54,7 @@
       "digest": "71a66b712b2595af8e02fada3eaa0c67"
     },
     "DBool": {
-      "direct": false,
+      "direct": true,
       "kind": "ec",
       "digest": "8166dd12ad0e616b3a8ba7a7485be226"
     },
@@ -99,27 +94,27 @@
       "digest": "b97d32983e1fb562a4ce3233cef9e7b6"
     },
     "G1_UT": {
-      "direct": true,
+      "direct": false,
       "kind": "ec",
       "digest": "ba06e5f3316fd1c78bcdae5c195a54ed"
     },
     "G2_MixShuf": {
-      "direct": true,
+      "direct": false,
       "kind": "ec",
       "digest": "48ff7f0df0b21341fa4df1e7a84fd90c"
     },
     "G3_MixDDec": {
-      "direct": true,
+      "direct": false,
       "kind": "ec",
       "digest": "da9c2160fed3092f74fb6ebd4ef1eef0"
     },
     "G4_Hash": {
-      "direct": true,
+      "direct": false,
       "kind": "ec",
       "digest": "a61ea14607a8480f6b2044fb04c35c22"
     },
     "G5_NIZK_ZK": {
-      "direct": true,
+      "direct": false,
       "kind": "ec",
       "digest": "7bba2f52dac10936f3c22dbcff885636"
     },
@@ -127,16 +122,6 @@
       "direct": true,
       "kind": "ec",
       "digest": "75b24be39a2553529268939833ed2597"
-    },
-    "G7_DiscRand": {
-      "direct": true,
-      "kind": "ec",
-      "digest": "c10bec865be0b1630cc0324e1d2deea8"
-    },
-    "G8_Ideal": {
-      "direct": true,
-      "kind": "ec",
-      "digest": "53e7d17cb7eb9dddab6840fcf5a03339"
     },
     "Hash": {
       "direct": true,
@@ -202,11 +187,6 @@
       "direct": true,
       "kind": "ec",
       "digest": "59947d6783c9bb84b7f415608a9a0ab0"
-    },
-    "PCRTheorem": {
-      "direct": true,
-      "kind": "ec",
-      "digest": "fc10d777942aa1e0aaa6f159fa96700b"
     },
     "Pervasive": {
       "direct": true,
@@ -294,7 +274,7 @@
       "digest": "83b22e60e686b1602c3ca80fbc77656d"
     },
     "VSS": {
-      "direct": true,
+      "direct": false,
       "kind": "ec",
       "digest": "43d17c134bcc4823e4fc87115fd798d4"
     },

@@ -1,7 +1,7 @@
 {
   "version": 3,
   "echash": "r2025.03",
-  "root": { "kind": "ec", "digest": "4b9ecd6726ec1b5e02960598473b48b8" },
+  "root": { "kind": "ec", "digest": "3d2c930240a96d87df7ff2a5afbbd032" },
   "depends": {
     "AlgTactic": {
       "direct": false,
@@ -93,20 +93,40 @@
       "kind": "ec",
       "digest": "b97d32983e1fb562a4ce3233cef9e7b6"
     },
-    "H0_Real": {
+    "G1_UT": {
       "direct": false,
       "kind": "ec",
-      "digest": "d669f1a4115c71b1e7268d9f75fac9a2"
+      "digest": "ba06e5f3316fd1c78bcdae5c195a54ed"
     },
-    "H1_NIZK": {
+    "G2_MixShuf": {
+      "direct": false,
+      "kind": "ec",
+      "digest": "48ff7f0df0b21341fa4df1e7a84fd90c"
+    },
+    "G3_MixDDec": {
+      "direct": false,
+      "kind": "ec",
+      "digest": "da9c2160fed3092f74fb6ebd4ef1eef0"
+    },
+    "G4_Hash": {
+      "direct": false,
+      "kind": "ec",
+      "digest": "a61ea14607a8480f6b2044fb04c35c22"
+    },
+    "G5_NIZK_ZK": {
+      "direct": false,
+      "kind": "ec",
+      "digest": "7bba2f52dac10936f3c22dbcff885636"
+    },
+    "G6_dFHE_CPA": {
       "direct": true,
       "kind": "ec",
-      "digest": "8ee7f1184b6003f3fcb6d868ddfa2c69"
+      "digest": "75b24be39a2553529268939833ed2597"
     },
-    "H2_dFHE": {
+    "G7_DiscRand": {
       "direct": true,
       "kind": "ec",
-      "digest": "133f8b4cb9dd4eee0c9b920da8cdd006"
+      "digest": "c10bec865be0b1630cc0324e1d2deea8"
     },
     "Hash": {
       "direct": false,
@@ -177,6 +197,11 @@
       "direct": true,
       "kind": "ec",
       "digest": "0f385a91ae1a1269de2ba2b7fad360d0"
+    },
+    "Policy": {
+      "direct": false,
+      "kind": "ec",
+      "digest": "0cdbb101cabfbcb6ec756cc9e1a9ab9b"
     },
     "Preamble": {
       "direct": true,

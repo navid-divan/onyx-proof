@@ -1,7 +1,7 @@
 {
   "version": 3,
   "echash": "r2025.03",
-  "root": { "kind": "ec", "digest": "540a452e81720acb70c19e3494f60515" },
+  "root": { "kind": "ec", "digest": "5c9d718da3f54c58ab900c713d478a14" },
   "depends": {
     "AlgTactic": {
       "direct": false,
@@ -93,25 +93,30 @@
       "kind": "ec",
       "digest": "b97d32983e1fb562a4ce3233cef9e7b6"
     },
-    "H0_Real": {
+    "G1_UT": {
       "direct": false,
       "kind": "ec",
-      "digest": "d669f1a4115c71b1e7268d9f75fac9a2"
+      "digest": "ba06e5f3316fd1c78bcdae5c195a54ed"
     },
-    "H1_NIZK": {
+    "G2_MixShuf": {
       "direct": false,
       "kind": "ec",
-      "digest": "8ee7f1184b6003f3fcb6d868ddfa2c69"
+      "digest": "48ff7f0df0b21341fa4df1e7a84fd90c"
     },
-    "H2_dFHE": {
+    "G3_MixDDec": {
+      "direct": false,
+      "kind": "ec",
+      "digest": "da9c2160fed3092f74fb6ebd4ef1eef0"
+    },
+    "G4_Hash": {
       "direct": true,
       "kind": "ec",
-      "digest": "133f8b4cb9dd4eee0c9b920da8cdd006"
+      "digest": "a61ea14607a8480f6b2044fb04c35c22"
     },
-    "H3_Ballot": {
+    "G5_NIZK_ZK": {
       "direct": true,
       "kind": "ec",
-      "digest": "0cdd9e33f00f3623395e707f23d9b913"
+      "digest": "7bba2f52dac10936f3c22dbcff885636"
     },
     "Hash": {
       "direct": false,
@@ -182,6 +187,11 @@
       "direct": true,
       "kind": "ec",
       "digest": "0f385a91ae1a1269de2ba2b7fad360d0"
+    },
+    "Policy": {
+      "direct": false,
+      "kind": "ec",
+      "digest": "0cdbb101cabfbcb6ec756cc9e1a9ab9b"
     },
     "Preamble": {
       "direct": true,
